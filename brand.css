@@ -149,11 +149,11 @@ body.customs-page .site-footer { padding-bottom: 35px; }
 }
 
 body.customs-page .brand img { width: 74px; height: 54px; border-radius: 0; }
-body.customs-page .quote-form { --bg: #fff; --text: #15232b; --muted: #52636d; --line: #d3e1e7; --accent: #00789b; --on-accent: #fff; color: var(--text); }
-body.customs-page .quote-form input { font-size: 16px; background: #f1f5f7; min-height: 48px; }
-body.customs-page .quote-form .button { text-align: left; background: #00789b; color: #fff; }
-body.customs-page .quote-form .button:hover { background: #005d79; }
-body.customs-page .form-note { margin: 0; }
+body.customs-page .ghl-form-frame { min-height: 560px; }
+body.customs-page .quote-cta { min-width: 0; align-self: center; padding: 28px; background: #fff; color: #15232b; }
+body.customs-page .quote-cta p { margin-block: 12px 20px; color: #52636d; }
+body.customs-page .quote-cta .button { text-align: left; background: #00789b; color: #fff; }
+body.customs-page .quote-cta .button:hover { background: #005d79; }
 body.customs-page .daylight-copy h1 { font-size: clamp(36px, 4.1vw, 58px); }
 @media (max-width: 760px) {
   body.customs-page .brand img { width: 50px; height: 37px; }

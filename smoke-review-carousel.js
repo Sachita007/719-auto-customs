@@ -1,6 +1,6 @@
 // Run in this page's browser console (desktop or mobile viewport):
 // await (await import('./smoke-review-carousel.js')).checkReviewCarousel()
-// Read-only: moves reviews, never submits either form.
+// Read-only: moves reviews, never submits the quote form.
 export async function checkReviewCarousel() {
   const track = document.querySelector('#review-track');
   const cards = [...track.children];
