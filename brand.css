@@ -19,8 +19,8 @@ body.customs-page .daylight-hero { background: #edf6f8; }
 body.customs-page .daylight-backdrop { object-position: center 56%; }
 body.customs-page .daylight-hero::before { background: linear-gradient(90deg, #f7fcfdf5 0%, #f1f9fce8 37%, #e7f5f96e 70%, #edf6f833 100%); }
 body.customs-page .daylight-grid { gap: 60px; padding-block: 42px; }
-body.customs-page .daylight-card { border-color: #cbdde4; border-top: 3px solid var(--accent); padding: 28px; box-shadow: 0 15px 45px #092f3b1a; }
-body.customs-page .daylight-card > p { font-size: 12px; }
+body.customs-page .daylight-card { border-color: #cbdde4; border-top: 3px solid var(--accent); padding: 18px; box-shadow: 0 15px 45px #092f3b1a; }
+body.customs-page .daylight-card > p { font-size: 12px; margin: 8px 0 0; }
 body.customs-page .daylight-card .button { width: 100%; gap: 12px; }
 body.customs-page .daylight-dark,
 body.customs-page .site-footer {
@@ -71,8 +71,8 @@ body.customs-page .review-card .google-letter { color: #00789b; font-size: 24px;
 .review-author small { display: block; color: #596c78; font-size: 9px; }
 .review-source { font-size: 9px; color: #00617e; text-decoration: underline; text-underline-offset: 3px; margin-top: 18px; }
 body.customs-page .quote-layout { gap: 60px; padding: 44px; border-radius: 0; }
-body.customs-page .ghl-quote { padding: 24px; border: 1px solid #cbdde4; border-top: 3px solid #00789b; }
-body.customs-page .ghl-form-frame { min-height: 0; border-radius: 4px; }
+body.customs-page .ghl-quote { padding: 18px; border: 1px solid #cbdde4; border-top: 3px solid #00789b; }
+body.customs-page .ghl-form-frame { min-height: 560px; border-radius: 4px; }
 body.customs-page .faq-list p a { text-decoration: underline; text-underline-offset: 3px; }
 body.customs-page .site-footer { padding-bottom: 35px; }
 @media (max-width: 1100px) {
@@ -101,7 +101,6 @@ body.customs-page .site-footer { padding-bottom: 35px; }
   body.customs-page .daylight-grid { gap: 26px; padding-block: 30px; }
   body.customs-page .daylight-backdrop { height: 365px; object-position: center 60%; }
   body.customs-page .daylight-hero::before { background: linear-gradient(90deg, #f7fcfdf2 0%, #f1f9fcd6 55%, #e7f5f999 100%); }
-  body.customs-page .daylight-card { padding: 24px 20px; }
   body.customs-page .daylight-card h2 { font-size: 26px; }
   body.customs-page .studio-trust { grid-template-columns: 1fr 1fr; }
   body.customs-page .studio-trust > div:nth-child(3) { padding-left: 0; }
@@ -115,7 +114,6 @@ body.customs-page .site-footer { padding-bottom: 35px; }
   .reviews-toolbar > span { display: none; }
   .review-card { flex-basis: 86%; padding: 22px; }
   body.customs-page .quote-layout { padding: 26px 20px; gap: 30px; }
-  body.customs-page .ghl-quote { padding: 20px; }
 }
 @media (max-width: 380px) {
   body.customs-page .container { padding-inline: 16px; }
@@ -149,11 +147,7 @@ body.customs-page .site-footer { padding-bottom: 35px; }
 }
 
 body.customs-page .brand img { width: 74px; height: 54px; border-radius: 0; }
-body.customs-page .ghl-form-frame { min-height: 560px; }
-body.customs-page .quote-cta { min-width: 0; align-self: center; padding: 28px; background: #fff; color: #15232b; }
-body.customs-page .quote-cta p { margin-block: 12px 20px; color: #52636d; }
-body.customs-page .quote-cta .button { text-align: left; background: #00789b; color: #fff; }
-body.customs-page .quote-cta .button:hover { background: #005d79; }
+body.customs-page .ghl-form-frame[data-iframe-resizer-initialized="true"] { min-height: 0; }
 body.customs-page .daylight-copy h1 { font-size: clamp(36px, 4.1vw, 58px); }
 @media (max-width: 760px) {
   body.customs-page .brand img { width: 50px; height: 37px; }
