@@ -10,3 +10,12 @@ if ('IntersectionObserver' in window) {
   }, { threshold: 0.08 });
   document.querySelectorAll('.section-heading, .benefit, .reason, .portfolio-grid figure, .studio-statement > *, .quote-copy').forEach(element => reveals.observe(element));
 }
+
+// Mobile quote bar: jump to whichever form is closest so its fields land just under the sticky header.
+const formPanels = [...document.querySelectorAll('#hero-quote, .ghl-quote')];
+document.querySelector('[data-form-jump]').addEventListener('click', event => {
+  event.preventDefault();
+  const nearest = formPanels.reduce((a, b) => Math.abs(a.getBoundingClientRect().top) <= Math.abs(b.getBoundingClientRect().top) ? a : b);
+  nearest.scrollIntoView({ block: 'start' });
+  nearest.focus({ preventScroll: true });
+});
